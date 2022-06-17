@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b4bfc89-3fe8-451a-9836-2573d718263b">
+  <producedTypes>
+    <selectionType typeId="89dcef5f-d282-490a-af91-6c06a4724cf5" valueTypeId="37851a8b-1b82-44b2-8410-12c5fc1355de"/>
+    <listType typeId="c16c1ed3-bfd5-4a5c-bedb-8e1c4943503c" valueTypeId="e226eee5-d836-4b63-adae-e8b392fb4c99"/>
+    <managerType typeId="7356e528-5796-43dd-94d7-bbe2f0bf5293" valueTypeId="52708a9b-8593-4c86-ba4f-c3f8c8bf062f"/>
+    <recordSetType typeId="0181c5d6-3e66-4f51-b7c9-251f6ff1420a" valueTypeId="21a1394f-a50a-4a6a-a935-9a1ef426fb0f"/>
+    <recordKeyType typeId="cbc7752a-bf5b-4b57-b65d-3c981ca4375c" valueTypeId="6dbaae43-acee-459f-9456-4a331c116e55"/>
+    <recordType typeId="624dfd72-4716-4b08-a806-e7a3ddb50623" valueTypeId="80697b0a-f6c9-4974-9307-a40635c0cb9c"/>
+    <recordManagerType typeId="6682e655-870f-4d88-9f72-15653b8f2b81" valueTypeId="ba60f463-8579-4227-98bf-57484ab796cc"/>
+  </producedTypes>
+  <name>ПланыЗапросовSQL</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планы запросов SQL</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПланыЗапросовSQL.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="04f37d73-0557-49d1-a50a-0ab0a617793e">
+    <name>plan_text</name>
+    <synonym>
+      <key>ru</key>
+      <value>Plan text</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="8fa8ba08-bb07-4281-89a3-22a7cc3a3496">
+    <name>sql_text_hash</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sql text hash</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="99825bf7-e95d-4598-b4a0-cff396c8bc9a">
+    <name>sql_plan_hash</name>
+    <synonym>
+      <key>ru</key>
+      <value>Sql plan hash</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>64</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="090774d3-3257-4507-a006-915a5ad73e78">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
